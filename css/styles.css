@@ -13,7 +13,7 @@ i {
     cursor: pointer;
 }
  /* ===================NAVBAR======================== */
-.shadowbtn {
+.sombraboton {
     width: 200px;
     height: 60px;
     border: none;
@@ -24,12 +24,12 @@ i {
     border-top: 1px solid white;
 }
 
-.shadowbtn:hover{
+.sombraboton:hover{
     color: black;
     transition: 1s ease;
 }
 
-.shadowbtn::before{
+.sombraboton::before{
     content: "";
     position: absolute;
     left: 0;
@@ -43,7 +43,7 @@ i {
     transition: 1s ease;
 }
 
-.shadowbtn:hover::before{
+.sombraboton:hover::before{
     background: white;
     top: 45px;
 }
