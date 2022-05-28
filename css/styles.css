@@ -12,6 +12,12 @@ body {
 i {
     cursor: pointer;
 }
+
+h2{
+    color: rgb(223, 223, 223);
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    
+}
  /* ===================NAVBAR======================== */
 .sombraboton {
     width: 200px;
@@ -67,6 +73,14 @@ i {
     margin-top: 80px;
 }
 
+.fondoserv {
+    background-image: url(../img/bgimg3.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+       
+}
+
 .galeria {
    max-width:100%; 
    box-shadow: 13px 9px 7px 0px rgba(0,0,0,0.1);
@@ -88,9 +102,14 @@ i {
 .serv {
     margin-top: 25px;
     padding: 5px;
-    border: 1px solid lightgray;
+    box-shadow: 5px -5px 9px 0px rgba(0,0,0,0.8);
     border-radius: 0px 50px 0px 50px;
     box-sizing: border-box;
+    color: rgb(48, 48, 48);
+    background-color: lightgray;
+    opacity: 0.8;
+    text-shadow: 0 0 rgba(0, 0, 0, 1);
+    
 }
 .servicios {
     text-align: center;
@@ -100,32 +119,49 @@ i {
     font-size: 18px;
     margin: 10px;
     padding: 10px;
+    color: white;
 }
 
 .servicio {
-    background-color: rgba(207, 207, 207, 0.253);
-    /* width: 24.5%; */
+    color: rgb(48, 48, 48);
+    height: auto;
+    background-color:lightgray;
+    opacity: 0.8;
     margin: 5px;
     text-align: center;
-    border: 1px solid lightgray;
+    text-shadow: 0 0 rgba(0,0,0, 1);
     border-radius: 50px 0px 50px 0px;
-    box-shadow: 5px -5px 9px 0px rgba(0,0,0,0.1);
+    box-shadow: 5px -5px 9px 0px rgba(0,0,0,0.8);
     box-sizing: border-box;
 }
 
+
 .galerias {
     max-width:100%; 
-    box-shadow: 13px 9px 7px 0px rgba(0,0,0,0.1);
+    box-shadow: 10px -5px 10px 0px rgba(0,0,0,.8);
     border-radius: 0% 100% 0% 100% / 50% 50% 50% 50%;
     position: relative;
     margin: 10px;
+    opacity: 1;
 }
+
+details summary::before {
+    position: relative;
+    content: "👇"; 
+    
+}
+ summary {
+    list-style: none;
+ }
 
 /* =================================GELERIA==================== */
 
 
-#galeria {
-    background-image: url(img/bgimg4.jpg);
+.fondogal {
+    background-image: url(../img/bgimg5.jpg);
+    background-repeat: no-repeat;
+    position:relative;
+    background-size: cover;
 }
 
 .tarjeta {
@@ -162,13 +198,31 @@ i {
     transform: scale(1.15);
 }
 
+/* ===========================================NOVEDADES=================================================== */
+
+.fondonov {
+    height: 1000px;
+    background-image: url(../img/bgimg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+
 /* ======================================CONTACTO======================= */
+
 textarea{
     resize: none;
 }
-
+.fondocont {
+    height: 800px;
+    background-image: url(../img/bgimg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
 .boton {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     width: 100%;
     box-sizing: border-box;
     border-radius: 10px;
@@ -198,7 +252,7 @@ textarea{
 .icono::before {
     top: -10px;
     border: 5px solid transparent;
-    border-top: 5px solid lightgray;
+    border-top: 5px solid rgb(255, 255, 255);
 }
 
 .icono::after {
@@ -206,9 +260,9 @@ textarea{
     top: 30px;
     padding: 2px 5px;
     border-radius: 4px;
-    color: #000;
+    color: rgb(255, 255, 255);
     font-size: 16px;
-    background-color: rgb(250, 250, 250);
+    background-color:transparent;
 }
 
 .icono:hover::before,
