@@ -14,44 +14,57 @@ i {
 }
 
 h2{
-    color: rgb(223, 223, 223);
+    color: rgb(255, 255, 255);
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
-    
+}
+
+h1{
+    text-shadow: 0 0 15px rgb(255, 173, 22),
+    0 0 25px rgba(253, 195, 36, 0.945),
+    0 0 60px rgba(253, 207, 78, 0.945); 
 }
  /* ===================NAVBAR======================== */
-.sombraboton {
+
+ .sombraboton {
     width: 200px;
     height: 60px;
     border: none;
     background-color: transparent;
+    text-transform: uppercase;
     color: white;
     cursor: pointer;
     position: relative;
-    border-top: 1px solid white;
+    /* border-top: 1px solid white; */
 }
 
 .sombraboton:hover{
     color: black;
     transition: 1s ease;
+    text-shadow: 0 0 15px rgb(255, 173, 22),
+    0 0 25px rgba(253, 195, 36, 0.945),
+    0 0 40px rgba(253, 207, 78, 0.945);
 }
 
 .sombraboton::before{
     content: "";
     position: absolute;
     left: 0;
-    top: 30px;
+    top: -20px;
     background: transparent;
     height: 40%;
     width: 100%;
     transform: perspective(1em)
-    rotateX(40deg) scale(1, 0.35);
-    filter: blur(8px);
+    rotateX(25deg) scale(1, 0.35);
+    filter: blur(10px);
     transition: 1s ease;
 }
 
 .sombraboton:hover::before{
     background: white;
-    top: 45px;
+    top: -10px;
+    box-shadow: 0 0 10px rgb(255, 173, 22),
+    0 0 20px rgba(253, 195, 36, 0.945),
+    0 0 25px rgba(253, 207, 78, 0.945);
 }
 
 .menunav li a {
@@ -210,12 +223,33 @@ details summary::before {
 #novedades h2 {
     margin-top: 100px;
 }
+
+#novedades h5 {
+    text-align: center;
+    margin-top: 5px;
+}
+
 .novedad {
     width: 300px;
     background: rgba(0, 0, 0, .8);
     color: white;
     border-radius: 20px;
     box-sizing: border-box;
+    margin: 10px;
+}
+
+.novedad:hover{
+    color: #fff;
+    background-color: rgb(41, 34, 1);
+    transition: .75s ease;
+    transform: scale(1.1);
+    box-shadow:  0 0 15px rgb(255, 173, 22),
+    0 0 25px rgba(253, 195, 36, 0.945),
+    0 0 60px rgba(253, 207, 78, 0.945); 
+}
+#novedades .row:last-child{
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 .fondonov {
     height: 1000px;
@@ -247,13 +281,15 @@ textarea{
     font-weight: 600;
     
 }
-.icono {
+
+ 
+ .icono { 
     position: relative;
     display: inline-flex;
 }
 
 .icono i {
-    font-size: 20px;
+    font-size: 22px;
     background-clip: text;
 }
 
@@ -262,32 +298,24 @@ textarea{
     content: '';
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 3px);
+    transform: translate(-50%, 15px);
     visibility: hidden;
-    transition: transform 0.5s;
-}
-
-.icono::before {
-    top: -10px;
-    border: 5px solid transparent;
-    border-top: 5px solid rgb(255, 255, 255);
+    transition: transform 0.75s;
 }
 
 .icono::after {
     content: attr(data-tooltip);
-    top: 30px;
-    padding: 2px 5px;
-    border-radius: 4px;
+    top: 38px;
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 18px;
     background-color:transparent;
 }
 
 .icono:hover::before,
 .icono:hover::after {
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -5px);
     visibility: visible;
-}
+} 
 
 .mapa {
     margin-left: 10px;
