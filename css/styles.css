@@ -6,7 +6,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-
+    scroll-behavior: smooth;
 } 
 
 i {
@@ -19,6 +19,7 @@ h2{
 }
 
 h1{
+    margin-bottom: 5px;
     text-shadow: 0 0 15px rgb(255, 173, 22),
     0 0 25px rgba(253, 195, 36, 0.945),
     0 0 60px rgba(253, 207, 78, 0.945); 
@@ -72,7 +73,10 @@ h1{
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
-
+ .icono2{
+     margin: 5px 0 10px 0;
+     background-color: transparent;
+ }
 
  /* =====================SLIDER=============================== */
 
